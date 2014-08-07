@@ -48,6 +48,15 @@ Use a specific class for your links and use the title attribute as caption.
 <a href="big/image.jpg" class="swipebox" title="My Caption">
 ```
 
+You can use h1-h6 as caption
+
+```html
+<a href="big/image.jpg" class="swipebox">
+ <h3>My Caption</h3>
+</a>
+```
+
+
 ###Fire the plugin
 
 Bind the swipebox behaviour on every link with the "swipebox" class.
