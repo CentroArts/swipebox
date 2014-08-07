@@ -108,7 +108,13 @@
 						if ( $( this ).attr( 'title' ) ) {
 							title = $( this ).attr( 'title' );
 						}
-							
+
+                        // if item has header - use it
+						for (var i = 6; i > 0; i--)
+						    if ($(this).find("h" + i).length) {
+						        title = $(this).find("h" + i).text();
+						        break;
+						    }
 
 						if ( $( this ).attr( 'href' ) ) {
 							href = $( this ).attr( 'href' );
