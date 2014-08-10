@@ -671,6 +671,9 @@
 					if ( youtubeShortUrl ) {
 						youtubeUrl = youtubeShortUrl;
 					}
+
+					console.log(youtubeUrl);
+
 					iframe = '<iframe width="560" height="315" src="//www.youtube.com/embed/' + youtubeUrl[1] + '" frameborder="0" allowfullscreen></iframe>';
 				
 				} else if ( vimeoUrl ) {
@@ -679,9 +682,10 @@
 				
 				}
                 
-                if (youtubeShortUrl || youtubeShortUrl || vimeoUrl){
+				if (youtubeUrl || youtubeShortUrl || vimeoUrl) {
                     
                 } else {
+
                     iframe = '<iframe width="560" height="315" src="' + url + '" frameborder="0" allowfullscreen></iframe>';
                 }
 
